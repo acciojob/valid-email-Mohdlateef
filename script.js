@@ -1,12 +1,18 @@
 function validEmail(str) {
   //your JS code here.
-	email_pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+	
+	mailformat= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	
     
     // # Using re.match() to check if the provided email matches the pattern
-    if re.match(email_pattern, str){
-        return True}
-    else{
-        return False}
+if(str.match(mailformat))
+{
+   return true;
+}
+else
+{
+   return false;
+}
 }
 
 // Do not change the code below.
